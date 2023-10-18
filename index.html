@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,300;1,800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+
+  <title>Frontend Mentor | Age calculator app</title>
+
+</head>
+
+<body>
+
+  <main>
+    <section class="flex">
+
+      <article class="input-flex">
+
+        <div class="day-flex">
+          <label for="day" class="heading-s">DAY</label>
+          <input type="number" id="day" class="heading-m" placeholder="DD">
+          <span class="warning" style="display: none;">Must be a valid day</span>
+        </div>
+        <div class="month-flex">
+          <label for="month" class="heading-s">MONTH</label>
+          <input type="number" id="month" class="heading-m" placeholder="MM">
+        </div>
+        <div class="year-flex">
+          <label for="year" class="heading-s">YEAR</label>
+          <input type="number" id="year" class="heading-m" placeholder="YYYY">
+        </div>
+
+      </article>
+
+
+
+      <article class="divider">
+
+        <span class="hr-line"></span>
+
+        <span class="calculate-button">
+          <svg xmlns="http://www.w3.org/2000/svg" width="46" height="46" viewBox="0 0 46 44">
+            <g fill="none" stroke="#FFF" stroke-width="2">
+              <path d="M1 22.019C8.333 21.686 23 25.616 23 44M23 44V0M45 22.019C37.667 21.686 23 25.616 23 44" />
+            </g>
+          </svg>
+        </span>
+
+      </article>
+
+
+
+      <article class="results">
+        <div>
+          <span id="years-result" class="heading-l">--</span>
+          <p class="heading-l">years</p>
+        </div>
+        <div>
+          <span id="months-result" class="heading-l">--</span>
+          <p class="heading-l">months</p>
+        </div>
+        <div>
+          <span id="days-result" class="heading-l">--</span>
+          <p class="heading-l">days</p>
+        </div>
+      </article>
+
+    </section>
+  </main>
+
+
+
+
+
+
+  <script src="index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,141 @@
+:root{
+    --primary-purple: hsl(259, 100%, 65%);
+    --primary-light-red: hsl(0, 100%, 67%);
+
+    --white: hsl(0, 0%, 100%);
+    --off-white: hsl(0, 0%, 94%);
+    --light-grey: hsl(0, 0%, 86%);
+    --smokey-grey: hsl(0, 1%, 44%);
+    --off-black: hsl(0, 0%, 8%);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.heading-l{
+    font-size: 6.5rem;
+    font-weight: 800;
+    font-style: italic;
+    line-height: 110%;
+    letter-spacing: 2%;
+}
+
+.heading-m{
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 1%;
+}
+
+.heading-s{
+    font-size: 0.875rem;
+    font-weight: 700;
+    letter-spacing: 25%;
+}
+
+.warning{
+    font-size: 0.875rem;
+    font-style: italic;
+    font-weight: 300;
+    color: red;
+}
+
+input[type="number"]::-webkit-inner-spin-button {
+    appearance: none;
+}
+
+html{
+    font-family: 'Poppins', sans-serif;
+}
+
+main{
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--light-grey);
+
+}
+
+.flex{
+    max-width: 52.5rem;
+    width: 52.5rem;
+    background-color: var(--white);
+    display: flex;
+    flex-direction: column;
+    padding: 3.5rem;
+    border-radius: 1.5rem 1.5rem 12.5rem 1.5rem;
+}
+
+.input-flex{
+    display: flex;
+    gap: 2rem;
+}
+
+.input-flex > div{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.input-flex > div > label{
+    color: var(--smokey-grey);
+}
+
+.input-flex > div > input{
+    max-width: 10rem;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.5rem;
+    border: 1px solid var(--light-grey);
+    outline: none;
+}
+
+.input-flex > div > input:hover{
+    cursor: pointer;
+}
+
+.input-flex > div > input:focus{
+    border: 1px solid var(--primary-purple);
+}
+
+.divider{
+    display: flex;
+    align-items: center;
+    
+}
+
+.hr-line{
+    border-bottom: 1px solid #DCDCDC;
+    width: calc(100% - 96px);
+}
+
+.calculate-button{
+    background-color: var(--primary-purple);
+    height: 96px;
+    width: 96px;
+    padding: 1.5rem;
+    border-radius: 50%;
+    margin-left: auto;
+}
+
+.calculate-button:hover{
+    background-color: var(--off-black);
+    cursor: pointer;
+}
+
+.results{
+    display: flex;
+    flex-direction: column;
+}
+
+.results > div{
+    display: flex;
+    gap: 0.5rem;
+}
+
+.results > div > span{
+    color: var(--primary-purple);
+}
