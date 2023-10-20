@@ -27,7 +27,6 @@
         <div class="day-flex">
           <label for="day" class="heading-s">DAY</label>
           <input type="number" id="day" class="heading-m" placeholder="DD">
-          <span class="warning" style="display: none;">Must be a valid day</span>
         </div>
         <div class="month-flex">
           <label for="month" class="heading-s">MONTH</label>
@@ -35,7 +34,7 @@
         </div>
         <div class="year-flex">
           <label for="year" class="heading-s">YEAR</label>
-          <input type="number" id="year" class="heading-m" placeholder="YYYY">
+          <input type="number" id="year" class="heading-m" placeholder="YYYY" min="0">
         </div>
 
       </article>
@@ -45,15 +44,16 @@
       <article class="divider">
 
         <span class="hr-line"></span>
-
-        <span class="calculate-button">
+        
+        <button class="calculate-button">
           <svg xmlns="http://www.w3.org/2000/svg" width="46" height="46" viewBox="0 0 46 44">
             <g fill="none" stroke="#FFF" stroke-width="2">
               <path d="M1 22.019C8.333 21.686 23 25.616 23 44M23 44V0M45 22.019C37.667 21.686 23 25.616 23 44" />
             </g>
           </svg>
-        </span>
+        </button>
 
+        <span class="hr-line-right"></span> 
       </article>
 
 
